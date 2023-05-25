@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="burger-button" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="adress-item list">
             <li class="adress list">
@@ -51,6 +56,70 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-close-button js-close-menu">
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list list">
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-adress-item list">
+            <li class="mobile-adress list">
+              <a class="mobile-adress-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress list">
+              <a
+                class="mobile-adress-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mobile-first-logo">
+            <li class="mobile-logo-list">
+              <a href="" class="mobile-icons-link">
+                <svg class="mobile-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-logo-list">
+              <a href="" class="mobile-icons-link">
+                <svg class="mobile-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-logo-list">
+              <a href="" class="mobile-icons-link">
+                <svg class="mobile-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-logo-list">
+              <a href="" class="mobile-icons-link">
+                <svg class="mobile-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Герой -->
@@ -127,6 +196,10 @@
             <li class="list card-set-item">
               <img
                 class="image"
+                srcset="
+                  ./images/wedoing/img_1desc@1x.jpg 1x,
+                  ./images/wedoing/img_1desc@2x.jpg 2x
+                "
                 src="./images/wedoing/computer.jpg"
                 alt="computer"
                 width="360"
@@ -135,6 +208,10 @@
             <li class="list card-set-item">
               <img
                 class="image"
+                srcset="
+                  ./images/wedoing/img_2descmob@1x.jpg 1x,
+                  ./images/wedoing/img_1desc@2x.jpg    2x
+                "
                 src="./images/wedoing/phones.jpg"
                 alt="phones"
                 width="360"
@@ -143,6 +220,10 @@
             <li class="list card-set-item">
               <img
                 class="image"
+                srcset="
+                  ./images/wedoing/img_3deschug@1x.jpg 1x,
+                  ./images/wedoing/img_3deschug@1x.jpg 2x
+                "
                 src="./images/wedoing/hand.jpg"
                 alt="hand"
                 width="360"
@@ -152,23 +233,25 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="section our-team">
+      <!-- <section class="section our-team">
         <div class="container">
           <h2 class="title-work">Our Team</h2>
           <ul class="list-work list card-set">
             <li class="team-list list card-set-team">
               <img
                 class="img-team"
+                srcset="./images/ourteam/imgmb@1x.jpg 1x, ./images/ourteam/imgmb@2x.jpg 2x"
                 src="./images/ourteam/mark.jpg"
                 alt="Ourteam"
                 width="264"
+                height="260"
               />
               <div class="our-team-list">
                 <h3 class="subtitle-team title">Mark Guerrero</h3>
                 <p class="subtext-team text">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-list-item">
-                    <a href="" class="social-list-link">
+                    <a href="" class-"social-list-link">
                       <svg class="social-list-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -202,9 +285,11 @@
             <li class="team-list list card-set-team">
               <img
                 class="img-team"
+                srcset="./images/ourteam/tomimgmb@1x.jpg 1x, ./images/ourteam/tommb@2x.jpg 2x"
                 src="./images/ourteam/tom.jpg"
                 alt="Ourteam"
                 width="264"
+                height="260"
               />
               <div class="our-team-list">
                 <h3 class="subtitle-team title">Tom Ford</h3>
@@ -245,9 +330,11 @@
             <li class="team-list list card-set-team">
               <img
                 class="img-team"
+                srcset="./images/ourteam/imgcamilamb@1x.jpg 1x, ./images/ourteam/imgcamilamb@2x.jpg 2x"
                 src="./images/ourteam/camila.jpg"
                 alt="Ourteam"
                 width="264"
+                height="260"
               />
               <div class="our-team-list">
                 <h3 class="subtitle-team title">Camila Garcia</h3>
@@ -288,9 +375,11 @@
             <li class="team-list list card-set-team">
               <img
                 class="img-team"
+                srcset="./images/ourteam/imgdanielmb@1x.jpg 1x, ./images/ourteam/imgdanialmb@2x.jpg 2x"
                 src="./images/ourteam/daniel.jpg"
                 alt="Ourteam"
                 width="264"
+                height="260"
               />
               <div class="our-team-list">
                 <h3 class="subtitle-team title">Daniel Wilson</h3>
@@ -329,9 +418,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
       <!-- Customers -->
-      <section class="section">
+      <section class="section_customers">
         <div class="container">
           <h2 class="title-work title-customers">Customers</h2>
           <ul class="customers list">
@@ -385,8 +474,8 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-item">
-          <a class="footer-logo link" href="./index.html"
-            >Web<span class="web-logo-footer footer">Studio</span></a
+          <a class="footer-logo first-logo link" href="./index.html"
+            >Web<span class="web-logo-footer footer-second">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -528,5 +617,6 @@
       </div>
     </div>
     <script src="./css/js/modal.js"></script>
+    <script src="./css/js/mobil.js"></script>
   </body>
 </html>
