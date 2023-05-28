@@ -66,28 +66,7 @@ section {
   padding: 120px 0;
 }
 
-/* Боді */
-/* .body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  background-color: var(--color-white);
-}
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-
-
-/* Логотип */
+/* Логотип  */
 .container {
   padding-right: 16px;
   padding-left: 16px;
@@ -263,6 +242,11 @@ section {
     color: #434455;
   }
 
+  .mobile-adress-mail:hover,
+  .mobile-adress-mail:focus {
+    color: #404bbf;
+  }
+
   .mobile-first-logo {
     display: flex;
     align-items: center;
@@ -316,6 +300,30 @@ section {
   .menu-list:focus {
     color: #404bbf;
   }
+  .menu-list {
+    padding: 24px 0;
+    display: block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-list::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+  }
+
+  .menu-list.active {
+    color: #404bbf;
+  }
+  .menu-list.active::after {
+    background-color: #404bbf;
+  }
 
   .adress {
     margin-bottom: 12px;
@@ -335,6 +343,7 @@ section {
   }
 
   .header {
+    padding: 0 15px 0 15px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
@@ -424,47 +433,15 @@ section {
 }
 
 /* Hero */
-
-/* .section-hero {
-    text-align: center;
-    
-    background-size: cover;
-    background-color: #2e2f42b2;
-    max-width: 428px;
-    margin: 0 auto;
-     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/dark-bgbg-img-mb@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-/* .section-hero { */
-/* min-width: 320px; */
-/* padding-top: 112px;
-  padding-bottom: 112px;
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/dark-bgbg-img-mb@1x.jpg);
-  background-color: var(--color-grey);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-} */
-@media screen and (min-width: 320px) .section-hero {
+/* Mobile */
+/* @media screen and (min-width: 320px) { */
+.section-hero {
   text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
   background-size: cover;
   background-color: #2e2f42b2;
-  max-width: 428px;
+  /* max-width: 428px; */
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -473,6 +450,7 @@ section {
     url(../images/hero/dark-bgbg-img-mb@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -533,26 +511,9 @@ section {
 }
 
 /* Hero mobile */
-/* @media screen and (min-width: 320px) {
-  .main-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #ffffff;
-    margin: auto;
-    margin-bottom: 72px;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
-
 @media screen and (min-width: 320px) {
   .main-title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -569,7 +530,6 @@ section {
   .main-title {
     min-width: 496px;
     font-size: 56px;
-    font-weight: 600;
     line-height: 1.07;
     margin-bottom: 36px;
   }
@@ -617,49 +577,6 @@ section {
   }
 }
 
-/* .main-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 496px;
-  margin-top: 0;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-} */
-/* Кнопка */
-/* .button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
-  display: block;
-  height: 56px;
-  min-width: 169px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  border: none;
-}
-
-.button:hover,
-.button:focus {
-  background: #404bbf;
-  cursor: pointer;
-}
-
-.button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 /* Portfolio Button */
 .portfolio-btn {
   display: flex;
@@ -1050,10 +967,6 @@ section {
     fill: #f4f4fd;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  /* .social-container {
-  padding-left: 110px;
-  padding-right: 110px;
-} */
   .wrapper-text {
     font-weight: 500;
     font-size: 16px;
@@ -1411,85 +1324,6 @@ section {
     max-width: 408px;
   }
 }
-
-/* Form Footer */
-/* .footer-wrapper {
-}
-.wrapper-text {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 16px;
-} */
-/* .form-content {
-  display: flex;
-  gap: 16px;
-} */
-/* .footer-form {
-  position: relative;
-  border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-} */
-
-/* .footer-input {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: none;
-  outline: transparent;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  line-height: 2;
-  color: #ffffff;
-  padding-left: 56px;
-} */
-/* .footer-text-form {
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  line-height: 2;
-  position: absolute;
-  left: 16px;
-  transform: translateY(-50%);
-  top: 50%;
-} */
-/* .footer-form-btn {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  min-width: 165px;
-  min-height: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  line-height: 1.6;
-  color: #ffffff;
-  background: #4d5ae5;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0 auto;
-  border: none;
-  padding: 8px 24px;
-  transition: background-color var(--animation-speed)
-    cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-  background-color: #404bbf;
-}
-
-.btn-form-footer {
-}
-.form-logo {
-} */
-
-/* Modal */
 
 /* Portfolio */
 .portfolio-link {
